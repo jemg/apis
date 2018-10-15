@@ -1,5 +1,9 @@
 {
   "name": "jsonapi",
+  "engines":{
+    "node": "9.8.0",
+    "npm": "6.4.1"
+  },
   "version": "1.0.0",
   "description": "To fetch data from database and convert it to a json",
   "main": "index.js",
