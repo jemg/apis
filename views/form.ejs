@@ -127,6 +127,7 @@
 	function toJSONString( form ) {
 		var obj = {};
 		var elements = form.querySelectorAll( "input, select, textarea" );
+		console.log("Data IN");
 		for( var i = 0; i < elements.length; ++i ) {
 			var element = elements[i];
 			var name = element.name;
@@ -142,6 +143,7 @@
 
 	document.addEventListener( "DOMContentLoaded", function() {
 		var form = document.getElementById( "reqdata" );
+		console.log("Senting Data");
 		form.addEventListener( "submit", function( e ) {
 			e.preventDefault();
 			var json = toJSONString( this );
